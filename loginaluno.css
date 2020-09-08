@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: 'imagem login';
+}
+
+.imagem{
+    grid-area: imagem;
+    padding: 30px;
+}
+
+.imagem img{
+    height: 100%;
+    margin-bottom: 50px;
+    margin-left: 180px;
+}
+
+.login{
+    grid-area: login;
+    padding: 30px;
+    background-color: #385a64;
+}
+
+.login img{
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.input-1{
+    border: none;
+    padding: 10px;
+    color: #385a64;
+    margin-left: 25px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.input-2{
+    border: none;
+    padding: 10px;
+    color: #385a64;
+    margin-left: 25px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    
+}
+
+.login button{
+    padding: 10px;
+    margin: 25px;
+    width: 375px;
+    border: none;
+    border-radius: 15px;
+    color: white ;
+    background-color: #00efc0;
+    font-size: 25px;
+    outline: none;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.button-1{
+    color: white;
+}
+
+.button-1:hover{
+    color: #385a64;
+}
+
+.login p{
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.login a{
+    color: white;
+    font-size: 18px;
+    margin-left: 130px;
+}
+
+.texto-espaçado{
+    letter-spacing: 20px;
+    font-size: 25px;
+    color: #00efc0;
+    margin-left: 50px;
+}
