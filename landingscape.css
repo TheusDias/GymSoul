@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'logo imagem' 'botões botões';
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo{
+    grid-area: logo;
+    padding: 25px;
+}
+
+.logo img{
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.logo h3{
+    font-size: 50px;
+    font-weight: 800;
+    animation: left 2s;
+    position: relative;
+}
+
+.logo p{
+    font-size: 35px;
+    color: #385a64;
+    font-weight: 800;
+    animation: left 2s;
+    position: relative;
+}
+
+@keyframes left{
+    from{
+        opacity: 0;
+        left: -100px;
+    }
+    to{
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+.texto-verde{
+    color: #00efc0;
+}
+
+.imagem{
+    grid-area: imagem;
+}
+
+.imagem img{
+    height: 100%;
+}
+
+.botões{
+    grid-area: botões;
+    padding: 25px;
+}
+
+.botões h4{
+    color: #385a64;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+.button{
+    padding: 18px;
+    font-size: 30px;
+    color: white;
+    width: 15%;
+    margin-right: 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.button-1{
+    background-color: #00efc0;
+}
+
+.button-1:hover{
+    background-color: #038d71;
+}
+
+.button-2{
+    background-color: #385a64;
+}
+
+.button-2:hover{
+    background-color: #76c2da;
+}
